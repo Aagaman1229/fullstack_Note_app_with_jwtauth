@@ -35,7 +35,13 @@ function App() {
           }
         />
         <Route 
-          path="/" 
+          path="/logout" 
+          element={
+            <Logout />
+          }
+        />
+        <Route 
+          path="/register" 
           element={
             <RegisterAndLogout/>
           }
