@@ -1,0 +1,98 @@
+/* General page style */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #12121c;
+  color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full height layout */
+.home-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fixed form panel on the left */
+form {
+  background-color: #1e1e2f;
+  width: 320px;
+  padding: 20px;
+  border-right: 1px solid #333;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+form h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+form label {
+  font-weight: bold;
+  color: #cccccc;
+  display: block;
+  margin-top: 12px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 14px;
+  background-color: #2c2c3f;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+  background: linear-gradient(135deg, #007bff, #5c33ff);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Notes section on the right */
+.notes-section {
+  margin-left: 320px; /* space for the fixed form */
+  padding: 20px;
+  width: calc(100% - 320px); /* Ensures the notes section takes up the remaining space */
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.notes-section h2 {
+  color: #f0f0f0;
+  font-size: 24px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 6px;
+}
